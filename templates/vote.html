@@ -1,0 +1,15 @@
+<h2>Vote for a Candidate</h2>
+
+<form method="POST">
+
+{% for c in candidates %}
+
+<input type="radio" name="candidate" value="{{c[0]}}">
+{{c[1]}} <br>
+
+{% endfor %}
+
+<br>
+<button>Vote</button>
+
+</form>
