@@ -4,13 +4,13 @@ import mysql.connector
 app = Flask(__name__)
 app.secret_key = "secretkey"
 
-def get_db():
-    return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="manoj@123",
-        database="voting_db"
-    )
+#def get_db():
+  #  return mysql.connector.connect(
+    #    host="localhost",
+   #     user="root",
+   #     password="manoj@123",
+    #    database="voting_db"
+   # )
 
 # LOGIN
 @app.route("/", methods=["GET","POST"])
